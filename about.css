@@ -1,0 +1,489 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&family=Poppins:ital,wght@0,500;1,400&display=swap");
+body {
+  background-color: black;
+  font-family: League spartan;
+}
+#logo {
+  /* animation: slideout 0.9s 0.3s 1 ease-in-out; */
+  display: inline-flex;
+  height: 140px;
+  width: 590px;
+  padding-left: 1.3rem;
+  margin-top: 2%;
+  clear: right;
+}
+.linex {
+  display: none;
+}
+.sidebar {
+  display: none;
+}
+.bars {
+  display: none;
+}
+.edit {
+  display: flex;
+  width: auto;
+  height: auto;
+  min-height: 325px;
+  padding: 3%;
+  background: fixed rgb(0, 0, 0);
+  justify-content: center;
+  margin: 0.4%;
+  padding: 20px;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.remex {
+  display: inline-flex;
+  list-style: none;
+  text-transform: uppercase;
+  padding: 0.3% 1%;
+  margin: auto;
+}
+li {
+  padding: 0 1.8rem 2rem;
+  font-weight: 850;
+  font-size: 21px;
+  margin-top: 0;
+}
+.ref:hover {
+  color: white;
+}
+.ref {
+  text-decoration: none;
+  color: red;
+  transition: color 0s 0s;
+}
+.about-1 {
+  display: flex;
+  margin: auto;
+}
+.tedpic {
+  display: flex;
+  height: 10rem;
+  width: 25rem;
+  margin: auto;
+}
+
+p.ted {
+  color: white;
+  font-size: 1.2rem;
+  flex-basis: 60%;
+  font-weight: 600;
+  margin: auto;
+  text-align: center;
+}
+.about-2 {
+  flex-direction: row-reverse;
+}
+.tedxpic {
+  display: flex;
+  height: 10rem;
+  width: 25rem;
+  margin: auto;
+  padding: 0 2rem 0 0;
+}
+p.tedx {
+  color: white;
+  font-size: 1.2rem;
+  flex-basis: 50%;
+  font-weight: 600;
+  margin: auto;
+  text-align: center;
+}
+.tedxspic {
+  display: flex;
+  height: 4rem;
+  width: 8rem;
+  margin: auto 0;
+}
+p.tedxs {
+  color: white;
+  font-size: 1.2rem;
+  flex-basis: 40%;
+  font-weight: 600;
+  margin: auto;
+  padding-left: 40%;
+  text-align: center;
+}
+.about-4 {
+  flex-direction: row-reverse;
+}
+.tedxscpic {
+  display: flex;
+  height: 4rem;
+  width: 8rem;
+  margin: auto;
+  padding-right: 42%;
+}
+p.tedxsc {
+  color: white;
+  font-size: 1.2rem;
+  flex-basis: 40%;
+  font-weight: 600;
+  margin: auto 0 auto -0.5rem;
+  text-align: center;
+}
+.main-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+h1 {
+  /* animation: slidein 0.8s 0.3s 1 ease-in-out; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 900;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: auto;
+  padding: 0.5rem 0.3rem 2rem;
+}
+footer {
+  position: relative;
+  bottom: 0;
+  padding-top: 5%;
+}
+.box-foot {
+  background-color: red;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  margin: auto;
+}
+.copy {
+  display: flex;
+  flex-direction: column;
+  font-size: 32px;
+  color: white;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.cen {
+  display: inline-flex;
+  margin: auto;
+}
+
+/* media mobile */
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: black;
+    max-width: 100%;
+  }
+  .logo {
+    display: flex;
+    height: auto;
+    width: auto;
+  }
+  #logo {
+    display: inline-flex;
+    height: 4.5rem;
+    width: 15rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: -5.3%;
+  }
+  .bars {
+    display: block;
+    position: absolute;
+    top: 1.6rem;
+    right: 1rem;
+    transition: 0.3s ease;
+  }
+  .bar-1,
+  .bar-2,
+  .bar-3 {
+    height: 5px;
+    width: 1.6rem;
+    background-color: white;
+    border-radius: 20%;
+    /* margin: 10% 0; */
+  }
+  .bar-1 {
+    transform: translateY(-2px);
+  }
+  .bar-3 {
+    transform: translateY(2px);
+  }
+  .sidebar {
+    display: block;
+    background-color: black;
+    height: 102vh;
+    width: 80%;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translate(100%);
+    transition: transform 0.2s 0.3s ease-in;
+  }
+  ul.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-weight: 850;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.4rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .sidebar.active {
+    display: block;
+    transform: translate(0);
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+  .lower {
+    display: flex;
+    justify-content: center;
+  }
+  .lower img {
+    height: 4rem;
+    width: auto;
+    position: absolute;
+    bottom: 2.8rem;
+    margin: auto;
+    padding-left: 1rem;
+  }
+  .spec {
+    width: 70%;
+    height: 0.1rem;
+    background-color: white;
+    margin: auto;
+    position: absolute;
+    bottom: 9rem;
+    left: 3rem;
+  }
+  .cross {
+    display: block;
+    position: absolute;
+    top: 1.6rem;
+    right: 1rem;
+  }
+  .cross-1 {
+    height: 5px;
+    width: 1.6rem;
+    background-color: white;
+    border-radius: 20%;
+    transform: translateY(2px) rotate(45deg);
+  }
+  .cross-2 {
+    height: 5px;
+    width: 1.6rem;
+    background-color: white;
+    border-radius: 20%;
+    transform: translateY(-3px) translateX(-1.3px) rotate(-45deg);
+  }
+  .linex {
+    display: inline-flex;
+    width: 30%;
+    height: 0.3rem;
+    background-color: white;
+    margin: auto;
+    margin-top: -2%;
+  }
+  .edit {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    min-height: 325px;
+    padding: 3%;
+    background: fixed rgb(0, 0, 0);
+    justify-content: center;
+    margin: 0.4%;
+    padding: 20px;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .remex {
+    display: none;
+    list-style: none;
+    text-transform: uppercase;
+    padding: 0.3% 1%;
+    margin: auto;
+  }
+  li {
+    padding: 0 1.8rem 2rem;
+    font-weight: 850;
+    font-size: 21px;
+    margin-top: 0;
+    list-style: none;
+    transition: all 0.3s 0s ease-in-out;
+  }
+  li:hover {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: white;
+    list-style: none;
+  }
+  .ref:hover {
+    color: white;
+  }
+  .ref {
+    text-decoration: none;
+    color: red;
+    transition: color 0s 0s;
+  }
+  .about-1 {
+    display: flex;
+    margin: auto;
+  }
+  .tedpic {
+    display: flex;
+    width: 100%;
+    margin: auto;
+  }
+  .tedpic > img {
+    height: 6rem;
+    width: 13rem;
+    margin: auto;
+  }
+
+  p.ted {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 570;
+    margin: auto;
+    text-align: justify;
+  }
+  .about-2 {
+    flex-direction: column;
+  }
+  .tedxpic {
+    display: flex;
+    height: 3rem;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 4rem;
+  }
+  .tedxpic > img {
+    height: 6rem;
+    width: 13rem;
+    margin: auto;
+  }
+  p.tedx {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 570;
+    margin: auto;
+    margin-left: -1.3%;
+    text-align: justify;
+  }
+  .about-3 {
+    flex-direction: column;
+  }
+  .tedxspic {
+    display: flex;
+    width: 100%;
+    margin: auto 0;
+  }
+  .tedxspic > img {
+    height: 2.5rem;
+    width: 13rem;
+    margin: auto;
+  }
+  p.tedxs {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 570;
+    width: 100%;
+    justify-content: center;
+    margin-left: -38%;
+    text-align: justify;
+  }
+  .about-4 {
+    flex-direction: column;
+  }
+  .tedxscpic {
+    display: flex;
+    height: 1rem;
+    width: 1rem;
+    /* margin: auto; */
+    margin-left: 12%;
+    padding-bottom: 3rem;
+  }
+  .tedxscpic > img {
+    height: 2rem;
+    width: 13rem;
+    margin: auto;
+  }
+  p.tedxsc {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 570;
+    margin-left: 2%;
+    text-align: justify;
+  }
+  .main-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  h1 {
+    /* animation: slidein 0.8s 0.3s 1 ease-in-out; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: rgb(255, 8, 0);
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 6rem auto 1rem;
+    padding: 0.5rem 0.3rem 2rem;
+  }
+  footer {
+    position: relative;
+    bottom: 0;
+    padding-top: 5%;
+  }
+  .box-foot {
+    background-color: red;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    margin: auto;
+  }
+  .copy {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    color: white;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .cen {
+    display: inline-flex;
+    margin: auto;
+  }
+}
